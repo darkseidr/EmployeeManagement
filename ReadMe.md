@@ -66,33 +66,33 @@ Employee Management System is an easy-to-use application for managing employees 
    git clone https://github.com/darkseidr/EmployeeManagement.git
    cd EmployeeManagement
 
-Backend Setup
- Open the solution in Visual Studio.
- Update database connection string in appsettings.json.
- Run Entity Framework migrations to set up the database.
+2. **Backend Setup
+ - **Open the solution in Visual Studio.
+ - **Update database connection string in appsettings.json.
+ - **Run Entity Framework migrations to set up the database.
  
-Frontend Setup
- Open the Blazor WebAssembly project in Visual Studio or Visual Studio Code.
- Configure API base URL in services.
- Build and run the Blazor WebAssembly project.
+3. **Frontend Setup
+ - **Open the Blazor WebAssembly project in Visual Studio or Visual Studio Code.
+ - **Configure API base URL in services.
+ - **Build and run the Blazor WebAssembly project.
 
  
-Run the Application
- Start the backend API project.
- Start the Blazor WebAssembly application.
+4. **Run the Application
+ - **Start the backend API project.
+ - **Start the Blazor WebAssembly application.
 
 
-API Endpoints
+### API Endpoints
 
  Document the API endpoints used for CRUD operations:
-  POST /api/Authenticate: Endpoint for user authentication.
-  GET /api/Employees: Fetches all employees.
-  GET /api/Employees/{id}: Fetches a specific employee by ID.
-  POST /api/Employees: Adds a new employee.
-  PUT /api/Employees/{id}: Updates an existing employee.
+  - **POST /api/Authenticate: Endpoint for user authentication.
+  - **GET /api/Employees: Fetches all employees.
+  - **GET /api/Employees/{id}: Fetches a specific employee by ID.
+  - **POST /api/Employees: Adds a new employee.
+  - **PUT /api/Employees/{id}: Updates an existing employee.
   DELETE /api/Employees/{id}: Deletes an employee.
-Screenshots
-Include screenshots or GIFs demonstrating the application’s UI and functionality.
+### Screenshots
+- **Include screenshots or GIFs demonstrating the application’s UI and functionality.
 
-Future Enhancements
-Integration of email functionality on creating of user passing on initial login credentials
+### Future Enhancements
+- **Integration of email functionality on creating of user passing on initial login credentials
