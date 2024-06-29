@@ -1,0 +1,67 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = EmployeeManagementUI
+build_property.RootNamespace = EmployeeManagementUI
+build_property.ProjectDir = R:\.NET\EmployeeManagement\EmployeeManagementUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = R:\.NET\EmployeeManagement\EmployeeManagementUI
+build_property._RazorSourceGeneratorDebug = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/AddEmployee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRW1wbG95ZWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/EditEmployee.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEVtcGxveWVlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/EmployeeList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wcsk5sj1fa
+
+[R:/.NET/EmployeeManagement/EmployeeManagementUI/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-latrf8y1zb

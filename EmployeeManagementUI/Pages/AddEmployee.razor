@@ -1,0 +1,53 @@
+﻿@page "/employees/add"
+@inject EmployeeService EmployeeService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<h3>Add Employee</h3>
+
+<EditForm Model="newEmployee" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <InputText @bind-Value="newEmployee.FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <InputText @bind-Value="newEmployee.LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <InputText @bind-Value="newEmployee.Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <InputText @bind-Value="newEmployee.Department" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="isActive">Active Status</label>
+        <div class="form-check">
+            <InputCheckbox @bind-Value="newEmployee.IsActive" class="form-check-input" />
+            <label class="form-check-label">@((newEmployee.IsActive ? "Yes" : "No"))</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Employee</button>
+</EditForm>
+
+@code {
+    private Employee newEmployee = new Employee();
+
+    private async Task HandleValidSubmit()
+    {
+        var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+        if (string.IsNullOrEmpty(token))
+        {
+            NavigationManager.NavigateTo("/login");
+            return;
+        }
+        await EmployeeService.CreateEmployee(newEmployee, token);
+        NavigationManager.NavigateTo("/employees");
+    }
+}

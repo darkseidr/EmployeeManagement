@@ -1,0 +1,11 @@
+R:\.NET\EmployeeManagement\SharedLibraries\bin\Debug\net8.0\SharedLibraries.deps.json
+R:\.NET\EmployeeManagement\SharedLibraries\bin\Debug\net8.0\SharedLibraries.dll
+R:\.NET\EmployeeManagement\SharedLibraries\bin\Debug\net8.0\SharedLibraries.pdb
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\SharedLibraries.GeneratedMSBuildEditorConfig.editorconfig
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\SharedLibraries.AssemblyInfoInputs.cache
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\SharedLibraries.AssemblyInfo.cs
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\SharedLibraries.csproj.CoreCompileInputs.cache
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\SharedLibraries.dll
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\refint\SharedLibraries.dll
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\SharedLibraries.pdb
+R:\.NET\EmployeeManagement\SharedLibraries\obj\Debug\net8.0\ref\SharedLibraries.dll

@@ -1,0 +1,104 @@
+﻿@page "/login"
+@page "/"
+
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+@* <EditForm Model="loginModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Username</label>
+        <InputText @bind-Value="loginModel.Username" placeholder="Username" />
+    </div>
+    <div>
+        <label>Password</label>
+        <InputText @bind-Value="loginModel.Password" type="password" placeholder="Password" />
+    </div>
+    <button type="submit">Login</button>
+</EditForm> *@
+
+
+<style>
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full height of viewport */
+        background-color: #f0f0f0; /* Light background color */
+    }
+
+    .login-form {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Adjust space below the password input */
+    .form-group:last-child {
+        margin-bottom: 1rem; /* Adjust as needed */
+    }
+</style>
+
+<div class="login-container">
+    <div class="login-form">
+        <h2 class="text-center mb-4">Login</h2>
+
+        <EditForm Model="loginModel" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <InputText @bind-Value="loginModel.Username" class="form-control" placeholder="Username" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <InputText @bind-Value="loginModel.Password" class="form-control" type="password" placeholder="Password" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </EditForm>
+    </div>
+</div>
+
+
+
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="error">@errorMessage</div>
+}
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private string errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+        if (!string.IsNullOrEmpty(token))
+        {
+            NavigationManager.NavigateTo("/employees");
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        errorMessage = string.Empty;
+        var token = await AuthService.Login(loginModel);
+        if (!string.IsNullOrEmpty(token))
+        {
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", token);
+            NavigationManager.NavigateTo("/employees");
+        }
+        else
+        {
+            errorMessage = "Invalid username or password";
+        }
+    }
+}

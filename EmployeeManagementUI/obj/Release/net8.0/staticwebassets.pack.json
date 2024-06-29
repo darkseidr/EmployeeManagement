@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\bin\\Release\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\obj\\Release\\net8.0\\compressed\\i2hecz376m.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\obj\\Release\\net8.0\\scopedcss\\bundle\\EmployeeManagementUI.styles.css",
+      "PackagePath": "staticwebassets\\EmployeeManagementUI.styles.css"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "R:\\.NET\\EmployeeManagement\\EmployeeManagementUI\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.EmployeeManagementUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.EmployeeManagementUI.props",
+      "PackagePath": "build\\EmployeeManagementUI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeManagementUI.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeManagementUI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.EmployeeManagementUI.props",
+      "PackagePath": "buildTransitive\\EmployeeManagementUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

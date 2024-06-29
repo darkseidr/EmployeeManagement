@@ -1,0 +1,68 @@
+﻿@page "/employees/edit/{id:int}"
+@inject EmployeeService EmployeeService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Employee employee = new Employee();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+        if (string.IsNullOrEmpty(token))
+        {
+            NavigationManager.NavigateTo("/login");
+            return;
+        }
+
+
+        employee = await EmployeeService.GetEmployee(Id, token);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var token = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+        if (string.IsNullOrEmpty(token))
+        {
+            NavigationManager.NavigateTo("/login");
+            return;
+        }
+        await EmployeeService.UpdateEmployee(employee, token);
+        NavigationManager.NavigateTo("/employees");
+    }
+}
+
+<h3>Edit Employee</h3>
+
+<EditForm Model="employee" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <InputText @bind-Value="employee.FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <InputText @bind-Value="employee.LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <InputText @bind-Value="employee.Email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="department">Department</label>
+        <InputText @bind-Value="employee.Department" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="isActive">Active Status</label>
+        <div class="form-check">
+            <InputCheckbox @bind-Value="employee.IsActive" class="form-check-input" />
+            <label class="form-check-label">@((employee.IsActive ? "Yes" : "No"))</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Employee</button>
+</EditForm>

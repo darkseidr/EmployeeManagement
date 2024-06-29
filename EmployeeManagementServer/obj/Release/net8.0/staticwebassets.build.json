@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GvQ/HTCq05UOubuevqxFapcZcNr20SkchnkRWchUTUs=",
+  "Source": "EmployeeManagementServer",
+  "BasePath": "_content/EmployeeManagementServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
