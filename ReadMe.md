@@ -23,40 +23,48 @@
 "Update-Database"
 
 
-Employe Management
-Overview
- A easy to use firm employee management system it utilizes .NET Web API for backend services and Blazor WebAssembly for the frontend.
+# Employee Management System
 
-Features:
- Authentication: Uses JWT for secure authentication.
- CRUD Operations: Implements CRUD operations for managing employee data.
- Add Employee: Allows adding new employees.
- Update Employee: Enables updating existing employee records.
- Delete Employee: Provides functionality to delete employee records.
- Fetch Employees: Retrieves a list of employees from the backend.
+## Overview
 
- 
-Technologies Used
+Employee Management System is an easy-to-use application for managing employees within a firm. It utilizes .NET Web API for backend services and Blazor WebAssembly for the frontend.
 
-Backend:
- .NET Web API
- Entity Framework Core for database operations
- JWT (JSON Web Tokens) for authentication
- 
-Frontend:
- Blazor WebAssembly standalone app
- Data binding with Blazor components
- 
-Setup Instructions
+## Features
 
- Prerequisites
-  Visual Studio or Visual Studio Code
-  .NET SDK
-  SQL Server
+- **Authentication**: Uses JWT (JSON Web Tokens) for secure user authentication.
+- **CRUD Operations**: Implements operations to manage employee data.
+  - **Add Employee**: Allows adding new employees to the system.
+  - **Update Employee**: Enables updating existing employee records.
+  - **Delete Employee**: Provides functionality to remove employee records.
+  - **Fetch Employees**: Retrieves a list of employees from the backend.
 
- 
- Steps to Run
-  Clone the Repository
+## Technologies Used
+
+### Backend
+
+- **.NET Web API**: Backend framework for handling HTTP requests.
+- **Entity Framework Core**: ORM (Object-Relational Mapping) for database operations.
+- **JWT**: Provides authentication tokens for secure user sessions.
+
+### Frontend
+
+- **Blazor WebAssembly**: Client-side framework for building interactive UI with .NET.
+- **Data Binding**: Uses Blazor components for seamless data binding.
+
+## Setup Instructions
+
+### Prerequisites
+
+- Visual Studio or Visual Studio Code installed.
+- .NET SDK installed.
+- SQL Server or another compatible database server.
+
+### Steps to Set Up Environment
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/darkseidr/EmployeeManagement.git
+   cd EmployeeManagement
 
 Backend Setup
  Open the solution in Visual Studio.
