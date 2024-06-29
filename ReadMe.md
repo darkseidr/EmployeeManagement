@@ -3,7 +3,7 @@
 ## Setting Up the Environment
 
 ### Prerequisites
-- [ ] Visual Studio or Visual Studio Code installed
+- [ ] Visual Studio 22 installed
 - [ ] .NET SDK installed
 - [ ] SQL Server or another compatible database server
 
